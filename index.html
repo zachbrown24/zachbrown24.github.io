@@ -13,7 +13,6 @@ ul {text-align: center;
     list-style-position: inside;
     padding-top: .1in;
 }
-</style>
 
 body {
     padding-left: 30%;
@@ -21,11 +20,11 @@ body {
   }
   
   .container {
-    width: 200px;
-    height: 200px;
+    width: 50px;
+    height: 50px;
     position: relative;
-    -webkit-perspective: 1000px;
-    -moz-perspective: 1000px;
+    -webkit-perspective: 100px;
+    -moz-perspective: 100px;
   }
   
   #cube {
@@ -33,10 +32,10 @@ body {
     height: 100%;
     position: absolute;
     -webkit-transform-style: preserve-3d;
-    -webkit-animation: rotatecube 10s infinite;
+    -webkit-animation: rotatecube 20s infinite;
     
     -moz-transform-style: preserve-3d;
-    -moz-animation: rotatecube 10s infinite;
+    -moz-animation: rotatecube 20s infinite;
   }
   
   #cube div {
@@ -68,27 +67,27 @@ body {
   }
   
   .front {
-    background: rgba(255,0,0,.5);
+    background: rgba(255, 255, 255, 0.961);
   }
   
   .back {
-    background: rgba(0,255,0,.5);
+    background: rgb(255, 255, 255);
   }
   
   .right {
-    background: rgba(0,0,255,.5);
+    background: rgb(255, 255, 255);
   }
   
   .left {
-    background: rgba(0,255,255,.5);
+    background: rgb(255, 255, 255);
   }
   
   .top {
-    background: rgba(255,0,255,.5);
+    background: rgb(255, 255, 255);
   }
   
   .bottom {
-    background: rgba(255,255,0,.5);
+    background: rgb(255, 255, 255);
   }
   
   #cube .front  {
@@ -115,7 +114,9 @@ body {
     -webkit-transform: rotateX( -90deg ) translateZ( 100px );
     -moz-transform: rotateX( -90deg ) translateZ( 100px );
   }
-  
+
+</style>
+
 <body bgcolor="black">
 <font color="white">
     <h1>zach brown</h1>
@@ -123,16 +124,18 @@ body {
         <li>currently, a junior in <a href="https://yalecollege.yale.edu" style="color: white">yale college</a> studying mathematics and statistics</li>
       </ul>
 </font>
+<p>
+    <div class="container">
+        <div id="cube">
+          <div class="front"></div>
+          <div class="back"></div>
+          <div class="right"></div>
+          <div class="left"></div>
+          <div class="top"></div>
+          <div class="bottom"></div>
+        </div>
+      </div>
+</p>
+
     </body>
 </html>
-
-<div class="container">
-    <div id="cube">
-      <div class="front">1</div>
-      <div class="back">2</div>
-      <div class="right">3</div>
-      <div class="left">4</div>
-      <div class="top">5</div>
-      <div class="bottom">6</div>
-    </div>
-  </div>
