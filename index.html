@@ -13,11 +13,6 @@ ul {text-align: center;
     list-style-position: inside;
     padding-top: .1in;
 }
-
-body {
-    padding-left: 30%;
-    padding-top: 5%;
-  }
   
   .container {
     width: 50px;
@@ -28,8 +23,11 @@ body {
   }
   
   #cube {
-    width: 50%;
-    height: 50%;
+    width: 100%;
+    height: 100%;
+    display: block;
+  margin-left: auto;
+  margin-right: auto;
     position: relative;
     -webkit-transform-style: preserve-3d;
     -webkit-animation: rotatecube 20s infinite;
@@ -137,7 +135,7 @@ body {
       </ul>
 </font>
 <p>
-    <div class="container"; style="position:absolute; left:715px; top:400px; align-items: center;">
+    <div class="container"; style="position: fixed; margin-top: 1.8in; margin-left: 5.3in;">
         <div id="cube">
           <div class="front"></div>
           <div class="back"></div>
